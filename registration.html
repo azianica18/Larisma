@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>REGISTRATION</h1>
+	<form>
+				<input type="text" placeholder="Firstname" id="fnames" name="fname"><br/><br>
+				<input type="text" placeholder="Lastname" id="lnames" name="lname"><br/><br>
+				<select id="gender" name="gen">
+					<option>Gender</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select><br><br/>
+				<p1>Birthdate:</p1><br>
+				<select id="year" name="yr">
+					<option>Year</option>
+					<option>2004</option>
+					<option>2003</option>
+					<option>2002</option>
+					<option>2001</option>
+					<option>2000</option>
+					<option>1999</option>
+					<option>1998</option>
+					<option>1997</option>
+					<option>1996</option>
+					<option>1995</option>
+					<option>1994</option>
+					<option>1993</option>
+					<option>1992</option>
+					<option>1991</option>
+					<option>1990</option>
+				</select>
+				<select id="month"
+				name="mnth">
+					<option>Month</option>
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+					<option>09</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+				<select id="day"
+				name="dy">
+					<option>Day</option>
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+					<option>09</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select><br><br/>
+				<input type="email" placeholder="Email" name="email" id="mail" autocomplete="on"><br/><br>	
+				<select>
+					<option>+63</option>
+					<option>+51</option>
+					<option>+64</option>
+					<option>+48</option>
+					<option>+351</option>
+					<option>+1-787</option>
+					<option>+1-939</option>
+					<option>+92</option>
+					<option>+40</option>
+					<option>+242</option>
+				</select>
+				<input type="phone" placeholder="Phone Number" id="number" name="phonenumber">
+				<br/><br>
+				<input type="button" value="Submit" onclick="save()">
+</form>
+<h4 id="result"></h4>
+<script>
+	function save() {
+		var namef=document.getElementById('fnames').value;
+		var namel=document.getElementById('lnames').value;
+		var gend=document.getElementById('gender').value;
+		var tuig=document.getElementById('year').value;
+		var buwan=document.getElementById('month').value;
+		var adlaw=document.getElementById('day').value;
+		var acc=document.getElementById('mail').value;
+		var numero=document.getElementById('number').value;
+
+		if (namef=fname && namel=lname && gend=genr && tuig=yr && buwan=mnth && adlaw=dy && acc=email && numero=phonenumber) 
+		{
+			document.getElementById('result').innerHTML="Thanks for registration!"
+		}
+		else{
+			document.getElementById('result').innerHTML="Please check the registration form"
+		}
+	}
+</script>
+</body>
+</html>
